@@ -21,14 +21,14 @@ function App() {
   return (
     <div className="App">
       <Sections width='350'>
+        
       {techStack.map(function(data) {
         return (
-          <div key={data.id}>
-            <SkillsBar data={data}/>
-          </div>
+          <SkillsBar key={data.id} data={data}/>
         )
       })}
       </Sections>
+
       <Sections width='650' >1234</Sections>
       <Sections width='350' >12312</Sections>
     </div>

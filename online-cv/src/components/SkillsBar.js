@@ -6,7 +6,7 @@ function SkillsBar(props){
         backgroundColor: "#00b4d8",
         width: `${props.data.percent}%`,
         borderRadius: "16px",
-        // textAlign: "center"
+        textAlign: "center"
     };
 
     const elemStyle = {
@@ -14,7 +14,7 @@ function SkillsBar(props){
         backgroundColor: "#f1f1f1",
         width: "300px",
         borderRadius: "16px",
-        // textAlign: "center",
+        textAlign: "center",
         margin: "5px"
     };
 
