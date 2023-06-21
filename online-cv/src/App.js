@@ -5,10 +5,14 @@ import Headings from './components/Headings';
 import SkillsBar from './components/SkillsBar';
 import Sections from './components/Sections';
 
+import { Grid, Typography } from '@mui/material';
+
+/*-----------------ICONS-----------------*/
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import MyLocationIcon from '@mui/icons-material/MyLocation';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-import { Grid, Typography } from '@mui/material';
+import StackedBarChartIcon from '@mui/icons-material/StackedBarChart';
+/*---------------------------------------*/
 
 
 function App() {
@@ -64,6 +68,24 @@ function App() {
           display="flex"
         >
           <Typography>visagiechristiaan40@gmail.com</Typography>
+        </Grid>
+      </Grid>
+      <hr />
+      <Grid container>
+        <Grid xs={2}>
+          <StackedBarChartIcon 
+            sx={{ color:'#00b4d8' }} 
+            fontSize='large'  
+            alignItems="center"
+          />
+        </Grid>
+        <Grid  item 
+          xs={10} 
+          alignItems="center"
+          justifyContent="start" 
+          display="flex"
+        >
+          <Typography variant='h5'>Tech Stack</Typography>
         </Grid>
       </Grid>
         {techStack.map(function(data) {

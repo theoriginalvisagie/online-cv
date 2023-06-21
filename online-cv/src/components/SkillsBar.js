@@ -1,4 +1,5 @@
 import '../style/skills.css';
+import { Typography } from '@mui/material';
 
 function SkillsBar(props){
     const elemStylePercent = {
@@ -20,7 +21,7 @@ function SkillsBar(props){
 
     return(
         <>
-            <h5 className='SkillsHeading'>{props.data.name}</h5>
+            <Typography variant='subtitle1' className='SkillsHeading' ml={1}>{props.data.name}</Typography>
             <div style={elemStyle}>
                 <div style={elemStylePercent}>               
                     {props.data.percent}%
