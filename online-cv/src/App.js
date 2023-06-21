@@ -65,7 +65,7 @@ function App() {
   return (
     <Grid container className="App" justifyContent="center" >
       {/*--LEFT SECTION--*/}
-      <Sections size="2.5">  
+      <Sections small="12" medium="2.5">  
         <img className='Ppic' src={ppic} alt='profile'/>
         <Grid container >
           <Grid xs={2} >
@@ -184,7 +184,7 @@ function App() {
       {/*----------------*/}
 
       {/*--MIDDEL SECTION--*/}
-      <Sections size="6">
+      <Sections small="12" medium="6">
         {workExperience.map(function(data) {
             return (
               <WorkExperience key={data.id} data={data} />
@@ -193,7 +193,7 @@ function App() {
        
       </Sections>
        {/*-----------------*/}
-      <Sections size="2.5">12312</Sections>
+      <Sections small="12" medium="2.5">12312</Sections>
     </Grid>
 
     

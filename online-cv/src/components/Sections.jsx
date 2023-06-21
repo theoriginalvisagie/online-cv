@@ -14,7 +14,8 @@ function Sections(props){
     return (
         <Grid
             item 
-            xs={props.size} 
+            xs={props.small} 
+            md={props.medium}
             backgroundColor={elemStyle.backgroundColor} 
             boxShadow={elemStyle.boxShadow} 
             m={0.5}
