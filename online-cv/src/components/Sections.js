@@ -9,7 +9,9 @@ function Sections(props){
     };
 
     return (
-        <div style={elemStyle}>{props.children}</div>
+        <div style={elemStyle}>
+            {props.children}
+        </div>
     );
 }
 
