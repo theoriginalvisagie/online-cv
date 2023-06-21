@@ -14,6 +14,7 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import StackedBarChartIcon from '@mui/icons-material/StackedBarChart';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
+import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 /*---------------------------------------*/
 
 
@@ -49,7 +50,7 @@ function App() {
       position: "Fullstack Engineer", 
       company: "Labmin.com", 
       from: "2020", 
-      to: "current", 
+      to: "Current", 
       description: "I help to create, maintain, update and test a Laboratory Information System that speeds up workflow within a laoratory while bring them as close as possible to a paperless environment. The majority of the software is built in PHP using OOP and MVC coding practices. A big part of my duties included to research new ways of achieving solutions to the problems handed to me as well as building entire modules from scratch including designing, setup, implementation and usage of MySQL databases, as well as setting up new servers for new clients or upgrading existing clients. I have built a complete QA module that includes trending, full auditing functionality with custom and dynamic checklists, traceability and security. I am currently managing a team of 2 junior software developers. Another part of my duties include handling client requests for bug fixes, new implantation, and error tracing as well as going to the clients to provide training and set up of their systems."
     },
     {
@@ -185,6 +186,23 @@ function App() {
 
       {/*--MIDDEL SECTION--*/}
       <Sections small="12" medium="6">
+        <Grid container>
+          <Grid xs={2}>
+            <WorkHistoryIcon 
+              sx={{ color:'#00b4d8', fontSize: 50 }} 
+              alignItems="center"
+            />
+          </Grid>
+          <Grid  item 
+            xs={10} 
+            alignItems="center"
+            justifyContent="start" 
+            display="flex"
+          >
+             <Typography variant='h3'>Work Experience</Typography>
+          </Grid>
+        </Grid> 
+       
         {workExperience.map(function(data) {
             return (
               <WorkExperience key={data.id} data={data} />
