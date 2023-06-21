@@ -15,6 +15,7 @@ import StackedBarChartIcon from '@mui/icons-material/StackedBarChart';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
+import SchoolIcon from '@mui/icons-material/School';
 /*---------------------------------------*/
 
 
@@ -61,6 +62,121 @@ function App() {
       to: "2020", 
       description: "I photographed models for ad campaigns and test shoots to update their portfolios.General duties included: Sourcing Models, planning of photoshoots from art boards to wardrobe and the final shoot as well as final editing of the photographs taken."
     }
+  ]
+
+  const education = [
+    {
+      id: 1, 
+      type: "OfferZen Thrive Mentorship", 
+      from: "Nov 2020", 
+      to: "Feb 2021", 
+      courses: [
+        {
+          id: 1,
+          name: "Mentee Through OfferZen"
+        }
+      ]
+    },
+    {
+      id: 2, 
+      type: "Online Courses", 
+      from: "", 
+      to: "", 
+      courses: [
+        {
+          id: 1,
+          name: "PHP for Beginners - Become a PHP Master - CMS Project"
+        },
+        {
+          id: 2,
+          name: "The Complete 2021 Web Development Bootcamp"
+        },
+        {
+          id: 3,
+          name: "Object Orientated PHP and MVC"
+        },
+        {
+          id: 4,
+          name: "Object Orientation in PHP"
+        },
+        {
+          id: 5,
+          name: "Learn C# Course"
+        },
+        {
+          id: 6,
+          name: "Data Science Career Path"
+        },
+      ]
+    },
+    {
+      id: 3, 
+      type: "FTC George", 
+      from: "2017", 
+      to: "2019", 
+      courses: [
+        {
+          id: 1,
+          name: "GRIII Flight Instructors Rating"
+        },
+        {
+          id: 2,
+          name: "Commercial Pilots License"
+        },
+      ]
+    },
+    {
+      id: 4, 
+      type: "Foster Aero", 
+      from: "2011", 
+      to: "2013", 
+      courses: [
+        {
+          id: 1,
+          name: "Private Pilots License"
+        },
+      ]
+    },
+    {
+      id: 5, 
+      type: "Hoërskool Randburg", 
+      from: "2010", 
+      to: "2014", 
+      courses: [
+        {
+          id: 1,
+          name: "Mathematics"
+        },
+        {
+          id: 2,
+          name: "AP Mathematics"
+        },
+        {
+          id: 3,
+          name: "Physics & Chemistry"
+        },
+        {
+          id: 4,
+          name: "Information Technology"
+        },
+        {
+          id: 5,
+          name: "Geography"
+        },
+        {
+          id: 6,
+          name: "Afrikaans"
+        },
+        {
+          id: 7,
+          name: "English"
+        },
+        {
+          id: 8,
+          name: "Life Orientation"
+        },
+      ]
+    },
   ]
   
   return (
@@ -214,9 +330,7 @@ function App() {
           <Grid 
             item 
             xs={10} 
-            alignItems="center"
-            justifyContent="start" 
-            display="flex"
+            className="centerMe"
           >
              <Typography variant='h3'>Work Experience</Typography>
           </Grid>
@@ -229,8 +343,31 @@ function App() {
           })}
        
       </Sections>
-       {/*-----------------*/}
-      <Sections small="12" medium="2.5">12312</Sections>
+      {/*-----------------*/}
+
+      {/*--RIGHT SECTION--*/}
+      <Sections small="12" medium="2.5">
+        <Grid container>
+          <Grid 
+            item 
+            xs={2}
+          >
+            <SchoolIcon 
+              sx={{ color:'#00b4d8', fontSize: 50 }} 
+              className="centerMe"
+            />
+          </Grid>
+          <Grid 
+            item 
+            xs={10} 
+            className="centerMe"
+          >
+             <Typography variant='h3'>Education</Typography>
+          </Grid>
+        </Grid> 
+      </Sections>
+      {/*-----------------*/}
+
     </Grid>
 
     
