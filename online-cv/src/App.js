@@ -31,7 +31,7 @@ function App() {
       <img className='Ppic' src={ppic} alt='profile'/>
       <Grid container >
         <Grid xs={2} >
-          <BusinessCenterIcon />
+          <BusinessCenterIcon sx={{ color:'#00b4d8' }} />
         </Grid>
         <Grid 
           item 
@@ -43,7 +43,7 @@ function App() {
         </Grid>
 
         <Grid xs={2}>
-          <MyLocationIcon />
+          <MyLocationIcon sx={{ color:'#00b4d8' }}/>
         </Grid>
         <Grid 
           item 
@@ -55,7 +55,7 @@ function App() {
         </Grid>
 
         <Grid xs={2}>
-          <AlternateEmailIcon />
+          <AlternateEmailIcon sx={{ color:'#00b4d8' }}/>
         </Grid>
         <Grid 
           item 
