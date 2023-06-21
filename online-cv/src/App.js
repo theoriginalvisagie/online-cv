@@ -5,6 +5,12 @@ import Headings from './components/Headings';
 import SkillsBar from './components/SkillsBar';
 import Sections from './components/Sections';
 
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import MyLocationIcon from '@mui/icons-material/MyLocation';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import { Grid, Typography } from '@mui/material';
+
+
 function App() {
   const techStack = [
     {id: 1, name: "PHP", percent: '60'},
@@ -22,7 +28,44 @@ function App() {
   return (
     <div className="App">
       <Sections width='350'>  
-      <img className='Ppic' src={ppic}/>
+      <img className='Ppic' src={ppic} alt='profile'/>
+      <Grid container >
+        <Grid xs={2} >
+          <BusinessCenterIcon />
+        </Grid>
+        <Grid 
+          item 
+          xs={10} 
+          justifyContent="start" 
+          display="flex"
+        >
+          <Typography>Software Engineer</Typography>
+        </Grid>
+
+        <Grid xs={2}>
+          <MyLocationIcon />
+        </Grid>
+        <Grid 
+          item 
+          xs={10} 
+          justifyContent="start" 
+          display="flex"
+        >
+          <Typography>Johannesburg, South Africa</Typography>
+        </Grid>
+
+        <Grid xs={2}>
+          <AlternateEmailIcon />
+        </Grid>
+        <Grid 
+          item 
+          xs={10} 
+          justifyContent="start" 
+          display="flex"
+        >
+          <Typography>visagiechristiaan40@gmail.com</Typography>
+        </Grid>
+      </Grid>
         {techStack.map(function(data) {
           return (
             <SkillsBar key={data.id} data={data}/>
