@@ -44,8 +44,8 @@ function App() {
   ]
   
   return (
-    <div className="App">
-        <Sections width='350'>  
+    <Grid container className="App" justifyContent="center" >
+      <Sections size="2.5">  
         <img className='Ppic' src={ppic} alt='profile'/>
         <Grid container >
           <Grid xs={2} >
@@ -162,9 +162,9 @@ function App() {
         })}
       </Sections>
 
-      <Sections width='650' >1234</Sections>
-      <Sections width='350' >12312</Sections>
-    </div>
+      <Sections size="6">1234</Sections>
+      <Sections size="2.5">12312</Sections>
+    </Grid>
 
     
   );

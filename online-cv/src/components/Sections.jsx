@@ -1,6 +1,9 @@
+import { Grid, Typography } from '@mui/material';
+
+
 function Sections(props){
     const elemStyle = {
-        backgroundColor: "#f1f1f1",
+        backgroundColor: "#FFF",
         width: `${props.width}px`,
         height: "auto",
         margin: "5px",
@@ -9,9 +12,15 @@ function Sections(props){
     };
 
     return (
-        <div style={elemStyle}>
+        <Grid
+            item 
+            xs={props.size} 
+            backgroundColor={elemStyle.backgroundColor} 
+            boxShadow={elemStyle.boxShadow} 
+            m={0.5}
+        >
             {props.children}
-        </div>
+        </Grid>
     );
 }
 
