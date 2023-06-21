@@ -69,7 +69,10 @@ function App() {
       <Sections small="12" medium="2.5">  
         <img className='Ppic' src={ppic} alt='profile'/>
         <Grid container >
-          <Grid xs={2} >
+          <Grid 
+            item 
+            xs={2} 
+          >
             <BusinessCenterIcon sx={{ color:'#00b4d8' }} />
           </Grid>
           <Grid 
@@ -81,7 +84,10 @@ function App() {
             <Typography>Software Engineer</Typography>
           </Grid>
 
-          <Grid xs={2}>
+          <Grid 
+            item
+            xs={2}
+          >
             <MyLocationIcon sx={{ color:'#00b4d8' }}/>
           </Grid>
           <Grid 
@@ -93,7 +99,10 @@ function App() {
             <Typography>Johannesburg, South Africa</Typography>
           </Grid>
 
-          <Grid xs={2}>
+          <Grid 
+            item 
+            xs={2}
+          >
             <AlternateEmailIcon sx={{ color:'#00b4d8' }}/>
           </Grid>
           <Grid 
@@ -107,14 +116,19 @@ function App() {
         </Grid>
         <hr />
         <Grid container>
-          <Grid xs={2}>
+          <Grid 
+            item
+            xs={2}
+          >
             <StackedBarChartIcon 
               sx={{ color:'#00b4d8' }} 
               fontSize='large'  
               alignItems="center"
+              display="flex"
             />
           </Grid>
-          <Grid  item 
+          <Grid 
+            item 
             xs={10} 
             alignItems="center"
             justifyContent="start" 
@@ -130,14 +144,19 @@ function App() {
           })}
         <hr />
         <Grid container>
-          <Grid xs={2}>
+          <Grid 
+            item
+            xs={2}
+          >
             <ConstructionIcon 
               sx={{ color:'#00b4d8' }} 
               fontSize='large'  
               alignItems="center"
+              display="flex"
             />
           </Grid>
-          <Grid  item 
+          <Grid  
+            item 
             xs={10} 
             alignItems="center"
             justifyContent="start" 
@@ -160,14 +179,19 @@ function App() {
         </List>
         <hr />
         <Grid container>
-          <Grid xs={2}>
+          <Grid 
+            item
+            xs={2}
+          >
             <MiscellaneousServicesIcon 
               sx={{ color:'#00b4d8' }} 
               fontSize='large'  
               alignItems="center"
+              display="flex"
             />
           </Grid>
-          <Grid  item 
+          <Grid  
+            item 
             xs={10} 
             alignItems="center"
             justifyContent="start" 
@@ -187,13 +211,18 @@ function App() {
       {/*--MIDDEL SECTION--*/}
       <Sections small="12" medium="6">
         <Grid container>
-          <Grid xs={2}>
+          <Grid 
+            item 
+            xs={2}
+          >
             <WorkHistoryIcon 
               sx={{ color:'#00b4d8', fontSize: 50 }} 
               alignItems="center"
+              display="flex"
             />
           </Grid>
-          <Grid  item 
+          <Grid 
+            item 
             xs={10} 
             alignItems="center"
             justifyContent="start" 

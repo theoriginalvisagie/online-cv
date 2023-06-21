@@ -12,10 +12,11 @@ function Sections(props){
     };
 
     return (
+        
         <Grid
             item 
-            xs={props.small} 
-            md={props.medium}
+            xs={Number(props.small)} 
+            md={Number(props.medium)}
             backgroundColor={elemStyle.backgroundColor} 
             boxShadow={elemStyle.boxShadow} 
             m={0.5}
