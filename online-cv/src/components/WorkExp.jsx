@@ -5,7 +5,6 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 function WorkExperience(props){
 
     function DisplayBadge(props){
-        console.log(props)
         if(props.data.data.to === "Current"){
             return(
                 <Chip 
@@ -29,6 +28,9 @@ function WorkExperience(props){
                     alignItems="center"
                     justifyContent="start" 
                     display="flex"
+                    ml={2}
+                    mt={2}
+                    mb={0}
                 >
                 <Typography
                     variant="h5"
@@ -43,6 +45,9 @@ function WorkExperience(props){
                     alignItems="center"
                     justifyContent="start" 
                     display="flex"
+                    mt={0}
+                    ml={2}
+                    mb={2}
                 >
                     <CalendarMonthIcon sx={{ color:'#00b4d8', fontSize: 35}}/>
                     <Typography
@@ -60,6 +65,7 @@ function WorkExperience(props){
                     alignItems="center"
                     justifyContent="start" 
                     display="flex"
+                    m={1}
                 >
                     <Typography 
                         variant="body1"
