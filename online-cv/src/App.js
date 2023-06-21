@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+import ppic from './assets/profile_pic.png'
 import './App.css';
 import Headings from './components/Headings';
 import SkillsBar from './components/SkillsBar';
@@ -20,13 +21,13 @@ function App() {
   
   return (
     <div className="App">
-      <Sections width='350'>
-        
-      {techStack.map(function(data) {
-        return (
-          <SkillsBar key={data.id} data={data}/>
-        )
-      })}
+      <Sections width='350'>  
+      <img className='Ppic' src={ppic}/>
+        {techStack.map(function(data) {
+          return (
+            <SkillsBar key={data.id} data={data}/>
+          )
+        })};
       </Sections>
 
       <Sections width='650' >1234</Sections>
