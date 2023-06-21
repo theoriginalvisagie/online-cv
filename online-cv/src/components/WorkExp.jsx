@@ -25,9 +25,7 @@ function WorkExperience(props){
                 <Grid 
                     item
                     xs={12}
-                    alignItems="center"
-                    justifyContent="start" 
-                    display="flex"
+                    className="centerMe"
                     ml={2}
                     mt={2}
                     mb={0}
@@ -42,9 +40,7 @@ function WorkExperience(props){
                 <Grid 
                     item 
                     xs={12}
-                    alignItems="center"
-                    justifyContent="start" 
-                    display="flex"
+                    className="centerMe"
                     mt={0}
                     ml={2}
                     mb={2}
@@ -62,9 +58,7 @@ function WorkExperience(props){
                 <Grid 
                     item 
                     xs={12}
-                    alignItems="center"
-                    justifyContent="start" 
-                    display="flex"
+                    className="centerMe"
                     m={1}
                 >
                     <Typography 

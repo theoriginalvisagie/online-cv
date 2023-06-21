@@ -36,6 +36,12 @@ body {
   width: 350px;
 }
 
+.centerMe{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -121,18 +121,15 @@ function App() {
             xs={2}
           >
             <StackedBarChartIcon 
+              className="centerMe"
               sx={{ color:'#00b4d8' }} 
               fontSize='large'  
-              alignItems="center"
-              display="flex"
             />
           </Grid>
           <Grid 
             item 
             xs={10} 
-            alignItems="center"
-            justifyContent="start" 
-            display="flex"
+            className="centerMe"
           >
             <Typography variant='h5'>Tech Stack</Typography>
           </Grid>
@@ -151,16 +148,13 @@ function App() {
             <ConstructionIcon 
               sx={{ color:'#00b4d8' }} 
               fontSize='large'  
-              alignItems="center"
-              display="flex"
+              className="centerMe"
             />
           </Grid>
           <Grid  
             item 
-            xs={10} 
-            alignItems="center"
-            justifyContent="start" 
-            display="flex"
+            xs={10}
+            className="centerMe"
           >
             <Typography variant='h5'>Tools</Typography>
           </Grid>
@@ -171,7 +165,7 @@ function App() {
               <ListItem 
                 key={data.id} 
               >
-                <Checkbox checked='checked'/>
+                <Checkbox checked={true}/>
                 {data.name}
               </ListItem>
             )
@@ -186,16 +180,13 @@ function App() {
             <MiscellaneousServicesIcon 
               sx={{ color:'#00b4d8' }} 
               fontSize='large'  
-              alignItems="center"
-              display="flex"
+              className="centerMe"
             />
           </Grid>
           <Grid  
             item 
             xs={10} 
-            alignItems="center"
-            justifyContent="start" 
-            display="flex"
+            className="centerMe"
           >
             <Typography variant='h5'>Other Skills</Typography>
           </Grid>
@@ -217,8 +208,7 @@ function App() {
           >
             <WorkHistoryIcon 
               sx={{ color:'#00b4d8', fontSize: 50 }} 
-              alignItems="center"
-              display="flex"
+              className="centerMe"
             />
           </Grid>
           <Grid 
