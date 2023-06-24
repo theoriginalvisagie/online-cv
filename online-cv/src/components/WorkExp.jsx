@@ -1,7 +1,6 @@
 import { Grid, Typography, Chip } from "@mui/material"
 
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import '../style/workExp.css';
 
 function WorkExperience(props){
 
@@ -62,7 +61,7 @@ function WorkExperience(props){
                 >
                     <Typography 
                         variant="body1"
-                        sx={{textAlign: "start"}}
+                        sx={{textAlign: "start", marginLeft: "14px"}}
                         className="positionDescrition"
                     >
                         {props.data.description}

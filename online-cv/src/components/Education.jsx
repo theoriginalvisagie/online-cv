@@ -1,4 +1,5 @@
-import { Grid, Typography, List, ListItem } from "@mui/material";
+import { Grid, Typography, List, ListItem, Divider } from "@mui/material";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Education({data}){
     let eduName = data.type;
@@ -10,29 +11,53 @@ function Education({data}){
         <Grid
         
         >
-            <Typography >
+            <Typography 
+                ml={2.5} 
+                mt={2} 
+                variant="h5"
+            >
                 {eduName}
             </Typography>
-            <Typography >
+            <Typography 
+                ml={2.5} 
+                variant="h6"
+            >
                 {(() => {
                     if(eduTo !== "" && eduFrom !== ""){
                         return `${eduFrom} - ${eduTo}`
                     }
                 })()}
             </Typography>
-            <List >
+            <List
+                sx={{
+                    marginLeft: "15px"
+                }}
+            >
                 {eduCourses.map(function(courses){
                     return(
-                        <ListItem 
-                            key={courses.id}
+                        <Grid
+                            key={`${courses.id}_grid`}
+                            sx={{
+                                display: "flex",
+                                marginLeft: "16px"
+                            }}
                         >
-                            {courses.name}
-                        </ListItem>  
+                            <ArrowForwardIcon />
+                            <ListItem 
+                                key={courses.id} 
+                                dense
+                            >
+                                {courses.name}
+                            </ListItem> 
+                        </Grid>
+                         
                     );
                     
                 })}
             </List>
+            <Divider variant="middle" />
         </Grid>
+        
         
     );
 }
