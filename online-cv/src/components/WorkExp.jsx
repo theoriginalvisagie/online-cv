@@ -1,6 +1,7 @@
 import { Grid, Typography, Chip } from "@mui/material"
 
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import '../style/workExp.css';
 
 function WorkExperience(props){
 
@@ -25,14 +26,11 @@ function WorkExperience(props){
                 <Grid 
                     item
                     xs={12}
-                    className="centerMe"
-                    ml={2}
+                    ml={2.5}
                     mt={2}
                     mb={0}
                 >
-                <Typography
-                    variant="h5"
-                >
+                <Typography variant="h5">
                     {props.data.position} | {props.data.company}
                 </Typography>
                     
@@ -40,15 +38,17 @@ function WorkExperience(props){
                 <Grid 
                     item 
                     xs={12}
-                    className="centerMe"
                     mt={0}
                     ml={2}
                     mb={2}
+                    sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start"
+                    }}
                 >
                     <CalendarMonthIcon sx={{ color:'#00b4d8', fontSize: 35}}/>
-                    <Typography
-                        variant="h5"
-                    >   
+                    <Typography variant="h5" ml={1}>   
                         {props.data.from} - <DisplayBadge data={props}/>
                     </Typography>
                     
@@ -58,12 +58,12 @@ function WorkExperience(props){
                 <Grid 
                     item 
                     xs={12}
-                    className="centerMe"
                     m={1}
                 >
                     <Typography 
                         variant="body1"
                         sx={{textAlign: "start"}}
+                        className="positionDescrition"
                     >
                         {props.data.description}
                     </Typography>

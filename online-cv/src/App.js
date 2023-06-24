@@ -274,8 +274,9 @@ function App() {
               justifyContent: "start"
             }}
           >
-            <WorkHistoryIcon sx={{ color:'#00b4d8',  fontSize: 50}} /> 
-            <Typography variant='h3' > Work Experience</Typography>
+            <WorkHistoryIcon sx={{ color:'#00b4d8',  fontSize: 50, marginLeft: "16px"}} /> 
+            
+            <Typography variant='h3' ml={2}>Work Experience</Typography>
           </Grid>
         </Grid> 
        
@@ -297,11 +298,11 @@ function App() {
               justifyContent: "start"
             }}
           >
-            <SchoolIcon  sx={{ color:'#00b4d8', fontSize: 50 }} />
-            <Typography variant='h3'> Education</Typography>
+            <SchoolIcon  sx={{ color:'#00b4d8', fontSize: 50, marginLeft: "16px" }} />
+            <Typography variant='h3' ml={2}> Education</Typography>
           </Grid>
         </Grid> 
-        
+
         {education.map(function(data) {
           return (
             <Education key={data.id} data={data}/>
