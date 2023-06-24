@@ -5,6 +5,7 @@ import SkillsBar from './components/SkillsBar';
 import Sections from './components/Sections';
 import WorkExperience from './components/WorkExp';
 import Education from './components/Education';
+import UsefulLinks from './components/UsefulLinks';
 
 import { Grid, Typography, List, ListItem, Checkbox } from '@mui/material';
 
@@ -17,6 +18,7 @@ import ConstructionIcon from '@mui/icons-material/Construction';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import SchoolIcon from '@mui/icons-material/School';
+import LinkIcon from '@mui/icons-material/Link';
 /*---------------------------------------*/
 
 
@@ -124,6 +126,38 @@ function App() {
         {id: 8,name: "Life Orientation"},
       ]
     }
+  ]
+
+  const links = [
+    {
+      id: 1, 
+      name: "Website", 
+      links: [
+        {id: 1, name: "christiaanvisagie.co.za", href: "https://www.christiaanvisagie.co.za"}
+      ]
+    },
+    {
+      id: 2, 
+      name: "Projects", 
+      links: [
+        {id: 1, name: "Compound Interest Calculator", href: "https://interestcalculator.christiaanvisagie.co.za/"},
+        {id: 2, name: "Thing Counter", href: "https://thingcounter.christiaanvisagie.co.za/"}
+      ]
+    },
+    {
+      id: 3, 
+      name: "Github Repos", 
+      links: [
+        {id: 1, name: "GitHub | TheOriginalVisagie", href: "https://github.com/theoriginalvisagie?tab=repositories"},
+      ]
+    },
+    {
+      id: 4, 
+      name: "Social", 
+      links: [
+        {id: 1, name: "LinkedIn", href: "https://www.linkedin.com/in/christiaan-visagie-ab629219b/"},
+      ]
+    },
   ]
   
   return (
@@ -314,7 +348,25 @@ function App() {
 
       {/*--RIGHT SECTION--*/}
       <Sections small="12" medium="2.5">
-
+      <Grid container>
+          <Grid 
+            item 
+            xs={12}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "start"
+            }}
+          >
+            <LinkIcon  sx={{ color:'#00b4d8', fontSize: 50, marginLeft: "16px" }} />
+            <Typography variant='h4' ml={2}> Useful Links</Typography>
+          </Grid>
+        </Grid> 
+      {links.map(function(data) {
+          return (
+            <UsefulLinks key={data.id} data={data}/>
+          )
+        })}
       </Sections>
       {/*-----------------*/}
 
