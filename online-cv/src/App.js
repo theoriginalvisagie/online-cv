@@ -4,6 +4,7 @@ import './App.css';
 import SkillsBar from './components/SkillsBar';
 import Sections from './components/Sections';
 import WorkExperience from './components/WorkExp';
+import Education from './components/Education';
 
 import { Grid, Typography, List, ListItem, Checkbox } from '@mui/material';
 
@@ -69,44 +70,23 @@ function App() {
       id: 1, 
       type: "OfferZen Thrive Mentorship", 
       from: "Nov 2020", 
-      to: "Feb 2021", 
-      courses: [
-        {
-          id: 1,
-          name: "Mentee Through OfferZen"
-        }
+      to: "Feb 2021",
+      courses: [ 
+        {id: 1, name: "Mentee To OfferZen"}
       ]
     },
     {
       id: 2, 
       type: "Online Courses", 
       from: "", 
-      to: "", 
-      courses: [
-        {
-          id: 1,
-          name: "PHP for Beginners - Become a PHP Master - CMS Project"
-        },
-        {
-          id: 2,
-          name: "The Complete 2021 Web Development Bootcamp"
-        },
-        {
-          id: 3,
-          name: "Object Orientated PHP and MVC"
-        },
-        {
-          id: 4,
-          name: "Object Orientation in PHP"
-        },
-        {
-          id: 5,
-          name: "Learn C# Course"
-        },
-        {
-          id: 6,
-          name: "Data Science Career Path"
-        },
+      to: "",
+      courses: [ 
+        {id: 1, name: "PHP for Beginners - Become a PHP Master - CMS Project" },
+        {id: 2, name: "The Complete 2021 Web Development Bootcamp"},
+        {id: 3, name: "Object Orientated PHP and MVC"},
+        {id: 4, name: "Object Orientation in PHP"},
+        {id: 5, name: "Learn C# Course"},
+        {id: 6, name: "Data Science Career Path"}
       ]
     },
     {
@@ -114,15 +94,9 @@ function App() {
       type: "FTC George", 
       from: "2017", 
       to: "2019", 
-      courses: [
-        {
-          id: 1,
-          name: "GRIII Flight Instructors Rating"
-        },
-        {
-          id: 2,
-          name: "Commercial Pilots License"
-        },
+      courses: [ 
+        {id: 1, name: "GRIII Flight Instructors Rating"},
+        {id: 2, name: "Commercial Pilots License"}
       ]
     },
     {
@@ -131,10 +105,7 @@ function App() {
       from: "2011", 
       to: "2013", 
       courses: [
-        {
-          id: 1,
-          name: "Private Pilots License"
-        },
+        {id: 1,name: "Private Pilots License" }
       ]
     },
     {
@@ -143,40 +114,16 @@ function App() {
       from: "2010", 
       to: "2014", 
       courses: [
-        {
-          id: 1,
-          name: "Mathematics"
-        },
-        {
-          id: 2,
-          name: "AP Mathematics"
-        },
-        {
-          id: 3,
-          name: "Physics & Chemistry"
-        },
-        {
-          id: 4,
-          name: "Information Technology"
-        },
-        {
-          id: 5,
-          name: "Geography"
-        },
-        {
-          id: 6,
-          name: "Afrikaans"
-        },
-        {
-          id: 7,
-          name: "English"
-        },
-        {
-          id: 8,
-          name: "Life Orientation"
-        },
+        {id: 1, name: "Mathematics"},
+        {id: 2, name: "AP Mathematics"},
+        {id: 3,name: "Physics & Chemistry"},
+        {id: 4,name: "Information Technology"},
+        {id: 5, name: "Geography"},
+        {id: 6,name: "Afrikaans"},
+        {id: 7,name: "English"},
+        {id: 8,name: "Life Orientation"},
       ]
-    },
+    }
   ]
   
   return (
@@ -337,10 +284,10 @@ function App() {
         </Grid> 
        
         {workExperience.map(function(data) {
-            return (
-              <WorkExperience key={data.id} data={data} />
-            )
-          })}
+          return (
+            <WorkExperience key={data.id} data={data} />
+          )
+        })}
        
       </Sections>
       {/*-----------------*/}
@@ -365,6 +312,11 @@ function App() {
              <Typography variant='h3'>Education</Typography>
           </Grid>
         </Grid> 
+        {education.map(function(data) {
+          return (
+            <Education key={data.id} data={data}/>
+          )
+        })}
       </Sections>
       {/*-----------------*/}
 
