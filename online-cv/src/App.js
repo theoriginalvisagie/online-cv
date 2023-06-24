@@ -288,12 +288,7 @@ function App() {
             <WorkExperience key={data.id} data={data} />
           )
         })}
-       
-      </Sections>
-      {/*-----------------*/}
 
-      {/*--RIGHT SECTION--*/}
-      <Sections small="12" medium="2.5">
         <Grid container>
           <Grid 
             item 
@@ -317,6 +312,13 @@ function App() {
             <Education key={data.id} data={data}/>
           )
         })}
+       
+      </Sections>
+      {/*-----------------*/}
+
+      {/*--RIGHT SECTION--*/}
+      <Sections small="12" medium="2.5">
+
       </Sections>
       {/*-----------------*/}
 
