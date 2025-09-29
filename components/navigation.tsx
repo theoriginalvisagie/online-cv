@@ -64,10 +64,10 @@ export function Navigation() {
                 {item.label}
               </a>
             ))}
-            <Button onClick={handleDownloadCV} size="sm" className="ml-4">
-              <Download className="w-4 h-4 mr-2" />
-              Download CV
-            </Button>
+            {/*<Button onClick={handleDownloadCV} size="sm" className="ml-4">*/}
+            {/*  <Download className="w-4 h-4 mr-2" />*/}
+            {/*  Download CV*/}
+            {/*</Button>*/}
           </div>
 
           {/* Mobile Menu Button */}

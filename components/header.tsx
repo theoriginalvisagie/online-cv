@@ -34,10 +34,10 @@ export function Header() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button onClick={handleDownloadCV} size="lg" className="w-fit">
-                <Download className="w-4 h-4 mr-2" />
-                Download CV (PDF)
-              </Button>
+              {/*<Button onClick={handleDownloadCV} size="lg" className="w-fit">*/}
+              {/*  <Download className="w-4 h-4 mr-2" />*/}
+              {/*  Download CV (PDF)*/}
+              {/*</Button>*/}
               <Button variant="outline" size="lg" onClick={scrollToContact} className="w-fit bg-transparent">
                 <Mail className="w-4 h-4 mr-2" />
                 Contact Me
