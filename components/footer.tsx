@@ -9,17 +9,17 @@ const socialLinks = [
   },
   {
     label: "LinkedIn",
-    url: "https://www.linkedin.com/in/christiaanvisagie",
+    url: "https://www.linkedin.com/in/christiaan-visagie/",
     icon: Linkedin,
   },
-  {
-    label: "X",
-    url: "https://x.com/theoriginalvisagie",
-    icon: Twitter,
-  },
+  // {
+  //   label: "X",
+  //   url: "https://x.com/theoriginalvisagie",
+  //   icon: Twitter,
+  // },
   {
     label: "Email",
-    url: "mailto:hello@christiaanvisagie.co.za",
+    url: "mailto:visagiechristiaan40@gmail.com",
     icon: Mail,
   },
 ]
