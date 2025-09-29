@@ -6,8 +6,9 @@ import { ProjectsSection } from "@/components/sections/projects-section"
 import { SkillsSection } from "@/components/sections/skills-section"
 import { EducationSection } from "@/components/sections/education-section"
 import { CertificationsSection } from "@/components/sections/certifications-section"
-import { TestimonialsSection } from "@/components/sections/testimonials-section"
-import { ContactSection } from "@/components/sections/contact-section"
+// import { TestimonialsSection } from "@/components/sections/testimonials-section"
+// import { ContactSection } from "@/components/sections/contact-section"
+import { ContactSection } from "@/components/sections/contact-section-2"
 import { Footer } from "@/components/footer"
 
 export default function HomePage() {
@@ -23,7 +24,7 @@ export default function HomePage() {
           <SkillsSection />
           <EducationSection />
           <CertificationsSection />
-          <TestimonialsSection />
+          {/* <TestimonialsSection /> */}
           <ContactSection />
         </div>
       </main>
