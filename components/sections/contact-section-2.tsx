@@ -19,8 +19,8 @@ export function ContactSection() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    console.log("siteKey", process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY)
-    
+    // console.log("siteKey", process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY)
+
     if (document.querySelector('script[data-recaptcha="true"]')) {
       setLoaded(true)
       return
