@@ -4,10 +4,10 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const experiences = [
   {
-    role: "Founder & Lead Engineer",
+    role: "Software Engineering Consultant",
     company: "Visagie & Co",
     location: "Johannesburg, ZA",
-    date: "2023 — Present",
+    date: "April 2025 — Present",
     bullets: [
       "Bridged communication between business & tech to cut time-to-release by 30%+.",
       "Built Laravel + Next.js apps with modular architecture and automated testing.",
@@ -16,10 +16,65 @@ const experiences = [
     tech: ["Laravel", "Next.js", "MySQL", "Docker", "Traefik", "GitHub Actions"],
   },
   {
-    role: "Full-stack Engineer (Contract)",
-    company: "Semstudio",
+    role: "Full-stack Engineer (Contract|Project Specific)",
+    company: "PPM",
     location: "Remote",
-    date: "2022 — 2023",
+    date: "January 2025 — March 2025",
+    bullets: [
+      "Shipped multi-tenant features and role-based auth with Laravel Sanctum.",
+      "Improved frontend performance and Lighthouse scores to 90+.",
+    ],
+    tech: ["Laravel", "React", "Tailwind", "Redis"],
+  },
+  {
+    role: "Senior Full-stack Engineer (Contract|Project Specific)",
+    company: "WWAS",
+    location: "Remote",
+    date: "April 2024 — December 2024",
+    bullets: [
+      "Shipped multi-tenant features and role-based auth with Laravel Sanctum.",
+      "Improved frontend performance and Lighthouse scores to 90+.",
+    ],
+    tech: ["Laravel", "React", "Tailwind", "Redis"],
+  },
+  {
+    role: "Head Of Software Engineering",
+    company: "Labmin",
+    location: "On Site",
+    date: "Febuary 2023 — March 2024",
+    bullets: [
+      "Shipped multi-tenant features and role-based auth with Laravel Sanctum.",
+      "Improved frontend performance and Lighthouse scores to 90+.",
+    ],
+    tech: ["Laravel", "React", "Tailwind", "Redis"],
+  },
+  {
+    role: "Full-stack Engineer",
+    company: "Labmin",
+    location: "On Site",
+    date: "September 2020 — January 2023",
+    bullets: [
+      "Shipped multi-tenant features and role-based auth with Laravel Sanctum.",
+      "Improved frontend performance and Lighthouse scores to 90+.",
+    ],
+    tech: ["Laravel", "React", "Tailwind", "Redis"],
+  },
+  {
+    role: "Full-stack Engineer (Freelance)",
+    company: "Freelance",
+    location: "Remote",
+    date: "January 2019 — August 2020",
+    bullets: [
+      "Shipped multi-tenant features and role-based auth with Laravel Sanctum.",
+      "Improved frontend performance and Lighthouse scores to 90+.",
+    ],
+    tech: ["Laravel", "React", "Tailwind", "Redis"],
+  },
+  {
+    role: "Various",
+    company: "Various",
+    location: "Remote",
+    date: "2012 - 2017",
     bullets: [
       "Shipped multi-tenant features and role-based auth with Laravel Sanctum.",
       "Improved frontend performance and Lighthouse scores to 90+.",
