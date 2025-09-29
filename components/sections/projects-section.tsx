@@ -2,31 +2,81 @@ import { SectionHeading } from "@/components/section-heading"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink, Github, Glasses } from "lucide-react"
 
 const projects = [
   {
     title: "The Marloth",
-    subtitle: "SaaS booking platform for small resorts/villages",
-    description:
-      "Full Laravel stack with role-based dashboards, PayFast payments, CI/CD, and containerized infra on VPS.",
+    subtitle: "Hospitality booking platform",
+    description: "A SaaS platform for small resorts and villages to manage reservations. Includes role-based dashboards, secure booking flows, PayFast payments, and containerized multi-environment infrastructure.",
     links: [
-      { label: "Live", url: "https://themarloth.example.com", icon: ExternalLink },
-      { label: "GitHub", url: "https://github.com/your/repo", icon: Github },
+      { 
+        label: "Private", 
+        url: "",
+        icon: Glasses 
+      },
     ],
-    tech: ["Laravel", "MySQL", "Docker", "Redis", "GitHub Actions"],
+    tech: ["Laravel", "MySQL", "Docker", "Redis", "GitHub Actions", "Traefik", "VPS"],
   },
   {
-    title: "Ice-Kream Collective",
-    subtitle: "E-commerce brand & site",
-    description: "Custom quoting flow, SEO-optimized pages, and image pipelines with Next.js and Tailwind.",
+    title: "TimeSheets",
+    subtitle: "Time & project management software",
+    description: "Built a web application for time tracking, project scheduling, and reporting. Features include user roles, automated reporting, and secure multi-tenant architecture.",
+    links: [
+      { 
+        label: "Private", 
+        url: "",
+        icon: Glasses 
+      },
+    ],
+    tech: ["Laravel", "Tailwind", "MySQL", "Docker", "Traefik", "VPS"],
+  },
+  {
+    title: "Immortal Ledger",
+    subtitle: "Quoting & invoicing system",
+    description: "Developed a financial management tool with quoting, invoicing, and payment tracking. Includes PDF generation, client portals, and custom tax logic.",
+    links: [
+      { 
+        label: "Private", 
+        url: "",
+        icon: Glasses 
+      },
+    ],
+    tech: ["Vanilla PHP", "MySQL", "Bootstrap", "Docker", "Traefik", "VPS"],
+  },
+  {
+    title: "Lilies and Lace",
+    subtitle: "Cake studio website",
+    description: "Designed and developed a brand website for a boutique cake business, with custom quote request flows, responsive design, and SEO optimization.",
+    links: [
+      { label: "Live", url: "https://liliesandlacecakes.co.za/", icon: ExternalLink },
+    ],
+    tech: ["Next.js", "Tailwind", "SEO", "Laravel", "Docker", "Traefik", "VPS"],
+  },
+  {
+    title: "AMS",
+    subtitle: "Aviation management system",
+    description: "Contributed to a platform supporting aviation operations, including scheduling, pilot logs, and compliance workflows. Focused on secure role-based features and integrations.",
+    links: [
+      { 
+        label: "Private", 
+        url: "",
+        icon: Glasses 
+      },
+    ],
+    tech: ["Laravel", "MySQL", "NextJs", "Redis", "Docker", "Traefik", "VPS"],
+  },
+  {
+    title: "The Ice-Kream Collective",
+    subtitle: "Shopify e-commerce store",
+    description: "E-commerce brand specializing in handmade skincare. Delivered a Shopify storefront with SEO-optimized content, custom imagery pipelines, and marketing automation.",
     links: [
       { label: "Live", url: "https://ice-kream.com", icon: ExternalLink },
-      { label: "GitHub", url: "https://github.com/your/repo", icon: Github },
     ],
-    tech: ["Next.js", "Tailwind", "Cloudflare", "Traefik"],
+    tech: ["Shopify", "Liquid", "SEO", "Custom Design"],
   },
 ]
+
 
 export function ProjectsSection() {
   return (
