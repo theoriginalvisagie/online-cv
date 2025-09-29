@@ -62,7 +62,7 @@ export function ContactSection() {
   }
 
   // Keep email encoded until verified
-  const encodedEmail = "aGVsbG9AY2hyaXN0aWFhbnZpc2FnaWUuY28uemE="
+  const encodedEmail = "dmlzYWdpZWNocmlzdGlhYW40MEBnbWFpbC5jb20="
   const email = revealed ? atob(encodedEmail) : ""
 
   return (
