@@ -2,6 +2,8 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Download, Mail } from "lucide-react"
+import Image from "next/image"
+import MainImage from "../public/profile-photo.jpeg";
 
 export function Header() {
   const handleDownloadCV = () => {
@@ -25,9 +27,9 @@ export function Header() {
               <h1 className="text-4xl md:text-5xl font-bold text-balance">
                 Hi, I'm <span className="text-accent">Christiaan Visagie</span>
               </h1>
-              <p className="text-xl text-muted-foreground text-pretty">Software Engineer • Builder • Problem-Solver</p>
+              <p className="text-xl text-muted-foreground text-pretty">Software Engineer • Problem-Solver • Recreational Pilot</p>
               <p className="text-lg text-muted-foreground text-pretty">
-                Full-stack Engineer focused on Laravel, Next.js, Docker & DevOps.
+                Full-stack Engineer specializing in resilient software systems, secure server architecture, and DevOps automation.
               </p>
             </div>
 
@@ -48,7 +50,10 @@ export function Header() {
               <div className="w-64 h-64 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 p-1">
                 <div className="w-full h-full rounded-2xl bg-card flex items-center justify-center">
                   <div className="w-48 h-48 rounded-xl bg-muted flex items-center justify-center">
-                    <span className="text-4xl font-bold text-muted-foreground">CV</span>
+                    <Image 
+                      src={MainImage}
+                      alt="main IMage"
+                    />
                   </div>
                 </div>
               </div>
