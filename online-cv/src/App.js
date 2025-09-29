@@ -163,7 +163,7 @@ function App() {
   return (
     <Grid container className="App" justifyContent="center" >
       {/*--LEFT SECTION--*/}
-      <Sections small="12" medium="2.5">  
+      <Grid size={3}>  
         <img className='Ppic' src={ppic} alt='profile'/>
         <Grid container >
           <Grid 
@@ -293,11 +293,11 @@ function App() {
               <SkillsBar key={data.id} data={data}/>
             )
         })}
-      </Sections>
+      </Grid>
       {/*----------------*/}
 
       {/*--MIDDEL SECTION--*/}
-      <Sections small="12" medium="6">
+      <Grid size={6}>
         <Grid container>
           <Grid 
             item 
@@ -343,11 +343,11 @@ function App() {
           )
         })}
        
-      </Sections>
+      </Grid>
       {/*-----------------*/}
 
       {/*--RIGHT SECTION--*/}
-      <Sections small="12" medium="2.5">
+      <Grid size={3}>
       <Grid container>
           <Grid 
             item 
@@ -367,7 +367,7 @@ function App() {
             <UsefulLinks key={data.id} data={data}/>
           )
         })}
-      </Sections>
+      </Grid>
       {/*-----------------*/}
 
     </Grid>
