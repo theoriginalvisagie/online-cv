@@ -30,7 +30,7 @@ const experiences = [
     ]
   },
   {
-    role: "Full-stack Engineer (Contract|Project Specific)",
+    role: "Senior Full-stack Engineer (Contract|Project Specific)",
     company: "PPM",
     location: "Remote",
     date: "April 2025 — July 2025",
