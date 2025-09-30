@@ -33,7 +33,7 @@ const experiences = [
     role: "Full-stack Engineer (Contract|Project Specific)",
     company: "PPM",
     location: "Remote",
-    date: "January 2025 — March 2025",
+    date: "April 2025 — July 2025",
     bullets: [
       "<strong>Implemented UK-compliant payment flows</strong> by integrating with <em>NuaPay</em> for direct debits, recurring payments, and secure money collection.",
       "<strong>Developed financial services features</strong> on the Laravel backend, aligning with strict banking regulations and ensuring data integrity.",
@@ -53,7 +53,7 @@ const experiences = [
     role: "Senior Full-stack Engineer (Contract|Project Specific)",
     company: "WWAS",
     location: "On Site",
-    date: "April 2024 — December 2024",
+    date: "April 2024 — March 2025",
     bullets: [
       "<strong>Led a cross-country development team</strong> of 7 engineers and QA testers, driving delivery of core features for an <em>Automated Insurance Management System (AIMS)</em>.",
       "<strong>Delivered end-to-end insurance workflows</strong> covering policy setup, premium payments, claims submission, and back-office administration.",
