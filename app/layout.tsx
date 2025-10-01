@@ -1,6 +1,7 @@
 import type React from "react"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,7 +27,6 @@ export const metadata = {
     title: "Christiaan Visagie — Software Engineer",
     description: "Full-stack engineer building Laravel + Next.js products, with DevOps on Docker/Traefik.",
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -36,7 +36,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} antialiased`}>
-      <body className="bg-background text-foreground font-sans">{children}</body>
+      <body className="bg-background text-foreground font-sans">
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
