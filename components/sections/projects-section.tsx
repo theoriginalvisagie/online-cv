@@ -44,6 +44,19 @@ const projects = [
     ],
     tech: ["Vanilla PHP", "MySQL", "Bootstrap", "Docker", "Traefik", "VPS"],
   },
+    {
+        title: "Glimpse Of The Gospel",
+        subtitle: "Bible App",
+        description: "GOTG is a web app built using Next.JS, Tailwind, PHP and MySQL. It enables users to rate, save and share all their favourite verses from the Bible.",
+        links: [
+            {
+                label: "Live",
+                url: "https://glimpseofthegospel.com",
+                icon: ExternalLink
+            },
+        ],
+        tech: ["Vanilla PHP", "MySQL", "Tailwind", "Docker", "Vercel", "Next.Js"],
+    },
   {
     title: "Lilies and Lace",
     subtitle: "Cake studio website",
