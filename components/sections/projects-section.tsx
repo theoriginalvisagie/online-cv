@@ -18,6 +18,19 @@ const projects = [
     ],
     tech: ["Laravel", "MySQL", "Docker", "Redis", "GitHub Actions", "Traefik", "VPS"],
   },
+    {
+        title: "Island Excursions",
+        subtitle: "Tour Booking Platform",
+        description: "A cloud-native platform tailored for tourists to discover, book, and manage marine excursions, ranging from private boat and yacht charters to guided sightseeing tours, across the Caribbean. ",
+        links: [
+            {
+                label: "Live",
+                url: "https://islandexcursions.com/",
+                icon: ExternalLink
+            },
+        ],
+        tech: ["Laravel", "MySQL", "Docker", "Redis", "GitHub Actions", "Traefik", "VPS"],
+    },
   {
     title: "TimeSheets",
     subtitle: "Time & project management software",
